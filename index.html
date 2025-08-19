@@ -1,0 +1,119 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Home — Christian Senior Mission</title>
+<link rel="stylesheet" href="assets/styles.css"/><link rel="icon" href="images/logo.png">
+</head><body><header class="header"><div class="container nav">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="Christian Senior Mission logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html" >About</a>
+      <a href="programs.html" >Programs</a>
+      <a href="governance.html" >Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav></div></header>
+<main>
+  <section class="hero"><div class="container inner">
+    <h1>Support Christian Education & People with Disabilities</h1>
+    <p>We are a California Nonprofit Public Benefit Corporation dedicated to advancing Christ‑centered learning and inclusive support for seniors and individuals with disabilities.</p>
+    <p><a class="btn btn-primary" href="contact.html">Get in touch</a> <a class="btn" href="about.html">Learn more</a></p>
+  </div></section>
+  <!-- About Preview -->
+  <section class="section container split">
+    <div>
+      <h2>Who We Are</h2>
+      <p>Founded in 2020, Christian Senior Mission is a California Nonprofit Public Benefit Corporation. 
+         Our mission is to support Christian education and people with disabilities through programs 
+         that inspire faith, dignity, and inclusion.</p>
+      <a href="about.html" class="btn">More about us</a>
+    </div>
+    <figure>
+      <img src="images/he.jpg" alt="Students learning">
+    </figure>
+  </section>
+
+  <!-- Programs Preview -->
+  <section class="section container grid-3">
+    <article class="card">
+      <img src="images/scholarships.jpg" alt="Scholarships">
+      <div class="card-body">
+        <h3>Scholarships</h3>
+        <p>Tuition assistance for Christian education from K–12 to adult discipleship.</p>
+        <a href="programs.html" class="btn">Learn more</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/assistive.jpg" alt="Assistive Grants">
+      <div class="card-body">
+        <h3>Assistive Grants</h3>
+        <p>Funding for devices and services that improve accessibility and independence.</p>
+        <a href="programs.html" class="btn">Learn more</a>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/community.jpg" alt="Community Inclusion">
+      <div class="card-body">
+        <h3>Community Inclusion</h3>
+        <p>Programs and training that help churches welcome every ability.</p>
+        <a href="programs.html" class="btn">Learn more</a>
+      </div>
+    </article>
+  </section>
+
+  <!-- Impact -->
+  <section class="section container grid-3">
+    <div class="card"><div class="card-body">
+      <h3>50+</h3><p>Scholarships awarded</p>
+    </div></div>
+    <div class="card"><div class="card-body">
+      <h3>30+</h3><p>Assistive grants funded</p>
+    </div></div>
+    <div class="card"><div class="card-body">
+      <h3>20+</h3><p>Church partners engaged</p>
+    </div></div>
+  </section>
+
+  <!-- CTA -->
+  <section class="section cta">
+    <div class="container">
+      <h2>Your gift creates opportunity and belonging</h2>
+      <p>Every contribution helps expand scholarships, assistive grants, and inclusive ministries.</p>
+      <a href="contact.html" class="btn btn-primary">Get involved</a>
+    </div>
+  </section>
+
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:140px;height:auto;margin-bottom:.4rem;">
+      <div class="small">© <span id="year"></span> Christian Senior Mission</div>
+    </div>
+
+    <div>
+      <div class="small">
+        <strong>Registered in California</strong><br>
+        Nonprofit Public Benefit Corporation
+      </div>
+    </div>
+
+    <div>
+      <div class="small">
+        <strong>Address</strong><br>
+        29302 S. HIGHMORE AVENUE, Rancho Palos Verdes, CA 90275<br>
+        <strong>Phone:</strong> <a href="tel:+13194648301">+1&nbsp;319-464-8301</a><br>
+        <strong>Email:</strong> <a href="mailto:info@christianseniormission.space">info@christianseniormission.space</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const b=document.querySelector('.menu-toggle'),l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=l.style.display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+<script>
+const b=document.querySelector('.menu-toggle'),l=document.querySelector('.links'); if(b&&l){b.addEventListener('click',()=>{const o=l.style.display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script></body></html>

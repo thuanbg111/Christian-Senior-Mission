@@ -1,0 +1,74 @@
+<!doctype html><html lang="en"><head>
+<meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Programs — Christian Senior Mission</title>
+<link rel="stylesheet" href="assets/styles.css"/><link rel="icon" href="images/logo.png">
+</head><body><header class="header"><div class="container nav">
+    <a class="brand" href="index.html"><img src="images/logo.png" alt="Christian Senior Mission logo"></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <nav class="links" aria-label="Main">
+      <a href="about.html" >About</a>
+      <a href="programs.html" class="active">Programs</a>
+      <a href="governance.html" >Governance</a>
+      <a href="contact.html" class="btn btn-primary">Contact</a>
+    </nav></div></header>
+<main class="section container">
+  <h1>Programs</h1>
+  <div class="grid-3">
+    <article class="card">
+      <img src="images/scholarships.jpg" alt="Students reading">
+      <div class="card-body">
+        <h3>Scholarships</h3>
+        <p>Tuition assistance for Christian education (K–12, higher education, adult discipleship). Priority for seniors and families affected by disability.</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/assistive.jpg" alt="Assistive device">
+      <div class="card-body">
+        <h3>Assistive Grants</h3>
+        <p>Mini‑grants for devices and services that improve independence and access (screen readers, mobility aids, hearing supports, training).</p>
+      </div>
+    </article>
+    <article class="card">
+      <img src="images/community.jpg" alt="Inclusive program">
+      <div class="card-body">
+        <h3>Community Inclusion</h3>
+        <p>Small grants and training for churches to host accessible, welcoming programs for seniors and people of every ability.</p>
+      </div>
+    </article>
+  </div>
+</main>
+<footer class="footer">
+  <div class="container grid">
+    <div>
+      <img src="images/logo.png" alt="" style="width:140px;height:auto;margin-bottom:.4rem;">
+      <div class="small">© <span id="year"></span> Christian Senior Mission</div>
+    </div>
+
+    <div>
+      <div class="small">
+        <strong>Registered in California</strong><br>
+        Nonprofit Public Benefit Corporation
+      </div>
+    </div>
+
+    <div>
+      <div class="small">
+        <strong>Address</strong><br>
+        29302 S. HIGHMORE AVENUE, Rancho Palos Verdes, CA 90275<br>
+        <strong>Phone:</strong> <a href="tel:+13194648301">+1&nbsp;319-464-8301</a><br>
+        <strong>Email:</strong> <a href="mailto:info@christianseniormission.space">info@christianseniormission.space</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script>
+  const b=document.querySelector('.menu-toggle'),l=document.querySelector('.links');
+  if(b&&l){b.addEventListener('click',()=>{const o=l.style.display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+  document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+
+<script>
+const b=document.querySelector('.menu-toggle'),l=document.querySelector('.links'); if(b&&l){b.addEventListener('click',()=>{const o=l.style.display==='flex';l.style.display=o?'none':'flex';b.setAttribute('aria-expanded',o?'false':'true');});}
+document.getElementById('year').textContent=new Date().getFullYear();
+</script></body></html>
