@@ -1,0 +1,37 @@
+:root{--text:#17223b;--muted:#4b5563;--bg:#fff;--brand:#234;--accent:#3a78f2;--soft:#eef4ff;--radius:16px;--shadow:0 8px 24px rgba(0,0,0,.08)}
+*{box-sizing:border-box}html,body{margin:0;padding:0}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,Arial,sans-serif;color:var(--text);background:var(--bg);line-height:1.65}
+/* Sticky footer – make page fill viewport height */
+html, body { height: 100%; }                /* đảm bảo tính toán chiều cao đúng */
+body{
+  min-height: 100svh;                       /* svh = safe viewport height (ổn trên mobile) */
+  display: flex;
+  flex-direction: column;
+}
+main{ flex: 1 0 auto; }                     /* đẩy footer xuống đáy */
+.footer{ margin-top: 0; }                   /* bỏ khoảng hở trên footer khi không cần */
+
+a{color:var(--accent);text-decoration:none}a:hover{text-decoration:underline}
+img{max-width:100%;display:block;border-radius:var(--radius)}
+.container{width:min(1100px,92%);margin-inline:auto}
+.header{position:sticky;top:0;background:#fff;border-bottom:1px solid #e6ebff;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:.8rem;padding:.7rem 0}
+.brand{display:flex;align-items:center;gap:.6rem}.brand img{width:170px;height:auto}
+.menu-toggle{font-size:1.25rem;background:transparent;border:0;padding:.4rem .6rem;border-radius:10px}
+.links{display:none;flex-direction:column;gap:.5rem}.links a{padding:.45rem .6rem;border-radius:10px}
+.btn{display:inline-block;padding:.7rem 1rem;border:1px solid #dae6ff;border-radius:12px;background:#fff}
+.btn:hover{box-shadow:var(--shadow);text-decoration:none}.btn-primary{background:var(--accent);border-color:var(--accent);color:#fff}
+.section{padding:2rem 0}.grid-3{display:grid;grid-template-columns:1fr;gap:1rem}
+.card{background:#fff;border:1px solid #eef2ff;border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden}
+.card-body{padding:1rem}
+.split{display:grid;grid-template-columns:1fr;gap:1rem;align-items:center}
+.footer{border-top:1px solid #e6ebff;background:#f9fbff;margin-top:1.5rem}
+.footer .grid{display:grid;grid-template-columns:1fr;gap:.8rem;padding:1.2rem 0}
+.small{font-size:.92rem;color:var(--muted)}
+.form{display:grid;grid-template-columns:1fr;gap:.8rem}
+label{display:grid;gap:.35rem;font-weight:600}
+input,textarea{width:100%;padding:.7rem .8rem;border:1px solid #d6def2;border-radius:10px}
+/* Map embed */
+.map-embed{width:100%;max-width:1100px;margin-inline:auto}
+.map-embed iframe{width:100%;aspect-ratio:16/9;border:0;border-radius:20px;box-shadow:var(--shadow)}
+@media(min-width:760px){.menu-toggle{display:none}.links{display:flex;flex-direction:row;gap:1rem}.grid-3{grid-template-columns:repeat(3,1fr)}.split{grid-template-columns:1.15fr 1fr}.footer .grid{grid-template-columns:1.4fr .8fr 1fr}}
